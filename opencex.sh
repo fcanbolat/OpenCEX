@@ -18,10 +18,10 @@ fi
 
 mkdir /app/opencex -p
 cd /app/opencex || exit
-git clone  https://github.com/Polygant/OpenCEX-backend.git ./backend
-git clone  https://github.com/Polygant/OpenCEX-frontend.git ./frontend
-git clone  https://github.com/Polygant/OpenCEX-static.git ./nuxt
-git clone  https://github.com/Polygant/OpenCEX-JS-admin.git ./admin
+git clone  https://github.com/fcanbolat/OpenCEX-backend.git ./backend
+git clone  https://github.com/fcanbolat/OpenCEX-frontend.git ./frontend
+git clone  https://github.com/fcanbolat/OpenCEX-static.git ./nuxt
+git clone  https://github.com/fcanbolat/OpenCEX-JS-admin.git ./admin
 
 echo "`cat <<YOLLOPUKKI
 
@@ -101,10 +101,10 @@ export SUPPORT_EMAIL
 #TWITTER - twitter page URL
 #LINKEDIN - linkedin page URL
 
-TELEGRAM=opencex
-FACEBOOK=polygant
-TWITTER=polygant
-LINKEDIN=polygant
+TELEGRAM=lomexc
+FACEBOOK=lomexc
+TWITTER=lomexc
+LINKEDIN=lomexc
 LOGO=
 
 export TELEGRAM
@@ -1105,7 +1105,7 @@ EOF
 # build hummingbot
 if [ "$IS_HUMMINGBOT_ENABLED" = "True" ]; then
 cd /app/opencex || exit
-git clone  https://github.com/Polygant/hummingbot.git ./hmbot
+git clone  https://github.com/fcanbolat/hummingbot.git ./hmbot
 cd ./hmbot
 docker build -t hummingbot:latest -f Dockerfile --target=release .
 cat << EOF >> /app/opencex/docker-compose.yml
