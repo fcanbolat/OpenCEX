@@ -102,9 +102,9 @@ export SUPPORT_EMAIL
 #LINKEDIN - linkedin page URL
 
 TELEGRAM=lomexc
-FACEBOOK=lomexc
-TWITTER=lomexc
-LINKEDIN=lomexc
+FACEBOOK=lomexchange
+TWITTER=lomexchange
+LINKEDIN=lomexchange
 LOGO=
 
 export TELEGRAM
