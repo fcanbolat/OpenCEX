@@ -600,8 +600,7 @@ export INSTANCE_NAME
 DB_NAME=opencex
 DB_USER=opencex
 DB_PASS=$(< /dev/urandom tr -dc A-Z-a-z-0-9 | head -c12)
-echo "Postgres"
-echo DB_PASS
+
 
 DB_HOST=postgresql
 DB_PORT=5432
@@ -614,8 +613,7 @@ export DB_PORT
 #echo "RabbitMQ credentials - user, password, server address and port"
 AMQP_USER=opencex
 AMQP_PASS=$(< /dev/urandom tr -dc A-Z-a-z-0-9 | head -c12)
-echo "RabbitMQ"
-echo AMQP_PASS
+
 
 AMQP_HOST=rabbitmq
 AMQP_PORT=5672
